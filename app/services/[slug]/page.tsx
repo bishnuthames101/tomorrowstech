@@ -174,7 +174,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
               Ready to Get Started?
             </h2>
             <p className="text-xl text-primary-50 mb-8">
-              Let's discuss how our {service.title.toLowerCase()} services can help your business grow.
+              Let&apos;s discuss how our {service.title.toLowerCase()} services can help your business grow.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">

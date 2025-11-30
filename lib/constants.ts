@@ -1,7 +1,7 @@
 import { Service, NavItem, Testimonial } from '@/types';
 
 export const COMPANY_NAME = "Tomorrow's Tech";
-export const COMPANY_TAGLINE = "Building Tomorrow's Digital Solutions Today";
+export const COMPANY_TAGLINE = "Building Tomorrow's Technology Today";
 export const COMPANY_DESCRIPTION = "We specialize in cutting-edge web development, mobile applications, digital marketing, and custom websites that drive your business forward in the digital age.";
 
 export const SERVICES: Service[] = [

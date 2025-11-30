@@ -207,7 +207,7 @@ export default function ContactForm() {
         <div className="p-4 bg-green-500/10 border border-green-500/50 rounded-lg flex items-center gap-3">
           <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
           <p className="text-green-500 text-sm">
-            Thank you! Your message has been sent successfully. We'll get back to you soon.
+            Thank you! Your message has been sent successfully. We&apos;ll get back to you soon.
           </p>
         </div>
       )}

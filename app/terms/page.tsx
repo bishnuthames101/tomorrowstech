@@ -44,7 +44,7 @@ export default function TermsPage() {
             {/* Introduction */}
             <div className="card">
               <p className="text-black leading-relaxed">
-                Welcome to Tomorrow's Tech. These Terms of Service ("Terms") govern your use of our website
+                Welcome to Tomorrow&apos;s Tech. These Terms of Service (&ldquo;Terms&rdquo;) govern your use of our website
                 and services. By accessing or using our services, you agree to be bound by these Terms. If
                 you disagree with any part of these terms, you may not access our services.
               </p>
@@ -58,7 +58,7 @@ export default function TermsPage() {
               </div>
               <div className="card">
                 <p className="text-black leading-relaxed">
-                  By accessing and using Tomorrow's Tech services, you accept and agree to be bound by these
+                  By accessing and using Tomorrow&apos;s Tech services, you accept and agree to be bound by these
                   Terms of Service and our Privacy Policy. If you are entering into these Terms on behalf of
                   a company or other legal entity, you represent that you have the authority to bind such
                   entity to these Terms.
@@ -74,7 +74,7 @@ export default function TermsPage() {
               </div>
               <div className="card space-y-4">
                 <p className="text-black leading-relaxed">
-                  Tomorrow's Tech provides various digital services including but not limited to:
+                  Tomorrow&apos;s Tech provides various digital services including but not limited to:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-black ml-4">
                   <li>Web development and design</li>
@@ -148,7 +148,7 @@ export default function TermsPage() {
                   <p className="text-black leading-relaxed">
                     All content, features, and functionality on our website, including but not limited to
                     text, graphics, logos, icons, images, audio clips, digital downloads, and software, are
-                    the exclusive property of Tomorrow's Tech and are protected by copyright, trademark,
+                    the exclusive property of Tomorrow&apos;s Tech and are protected by copyright, trademark,
                     and other intellectual property laws.
                   </p>
                 </div>
@@ -157,7 +157,7 @@ export default function TermsPage() {
                   <h3 className="text-xl font-semibold mb-3 text-primary-400">Client Content</h3>
                   <p className="text-black leading-relaxed">
                     For services provided, the intellectual property rights of deliverables will be governed
-                    by the specific agreement between you and Tomorrow's Tech. Unless otherwise specified in
+                    by the specific agreement between you and Tomorrow&apos;s Tech. Unless otherwise specified in
                     writing, you retain ownership of your content provided to us, while granting us a license
                     to use it for the purpose of providing our services.
                   </p>
@@ -188,7 +188,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold mb-4">Warranties and Disclaimers</h2>
               <div className="space-y-3 text-black leading-relaxed">
                 <p>
-                  Our services are provided "as is" and "as available" without any warranties, either express
+                  Our services are provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without any warranties, either express
                   or implied. We do not warrant that:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
@@ -207,7 +207,7 @@ export default function TermsPage() {
             <div className="card">
               <h2 className="text-2xl font-bold mb-4">Limitation of Liability</h2>
               <p className="text-black leading-relaxed">
-                To the maximum extent permitted by law, Tomorrow's Tech shall not be liable for any indirect,
+                To the maximum extent permitted by law, Tomorrow&apos;s Tech shall not be liable for any indirect,
                 incidental, special, consequential, or punitive damages, including but not limited to loss of
                 profits, data, use, goodwill, or other intangible losses, resulting from your use or inability
                 to use our services.
@@ -218,9 +218,9 @@ export default function TermsPage() {
             <div className="card">
               <h2 className="text-2xl font-bold mb-4">Indemnification</h2>
               <p className="text-black leading-relaxed">
-                You agree to indemnify, defend, and hold harmless Tomorrow's Tech and its officers, directors,
+                You agree to indemnify, defend, and hold harmless Tomorrow&apos;s Tech and its officers, directors,
                 employees, and agents from and against any claims, liabilities, damages, losses, and expenses,
-                including reasonable attorneys' fees, arising out of or in any way connected with your access
+                including reasonable attorneys&apos; fees, arising out of or in any way connected with your access
                 to or use of our services or your violation of these Terms.
               </p>
             </div>
@@ -242,7 +242,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold mb-4">Governing Law</h2>
               <p className="text-black leading-relaxed">
                 These Terms shall be governed by and construed in accordance with the laws of the jurisdiction
-                in which Tomorrow's Tech operates, without regard to its conflict of law provisions. Any legal
+                in which Tomorrow&apos;s Tech operates, without regard to its conflict of law provisions. Any legal
                 action or proceeding arising under these Terms will be brought exclusively in the courts located
                 in that jurisdiction.
               </p>
@@ -253,7 +253,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-bold mb-4">Changes to Terms</h2>
               <p className="text-black leading-relaxed">
                 We reserve the right to modify or replace these Terms at any time at our sole discretion. If a
-                revision is material, we will provide at least 30 days' notice prior to any new terms taking
+                revision is material, we will provide at least 30 days&apos; notice prior to any new terms taking
                 effect. What constitutes a material change will be determined at our sole discretion. By
                 continuing to access or use our services after those revisions become effective, you agree to
                 be bound by the revised terms.

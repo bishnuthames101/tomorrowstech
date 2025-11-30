@@ -64,7 +64,7 @@ export default function Portfolio() {
             Our <span className="text-primary-600">Portfolio</span>
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed mb-8">
-            Explore some of our recent projects and see how we've helped businesses 
+            Explore some of our recent projects and see how we&apos;ve helped businesses
             transform their digital presence and achieve their goals.
           </p>
         </motion.div>

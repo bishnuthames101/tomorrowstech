@@ -49,7 +49,7 @@ export default function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-6">
-            Why Choose <span className="text-primary-600">Tomorrow's Tech</span>
+            Why Choose <span className="text-primary-600">Tomorrow&apos;s Tech</span>
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             We combine technical expertise with creative innovation to deliver digital solutions 

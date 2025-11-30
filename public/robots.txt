@@ -1,0 +1,14 @@
+# robots.txt for Tomorrow's Tech
+# https://tomorrowstech.com.np
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://tomorrowstech.com.np/sitemap.xml
+
+# Disallow admin and API routes
+Disallow: /api/
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1

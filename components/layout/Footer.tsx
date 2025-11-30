@@ -21,13 +21,13 @@ export default function Footer() {
                 className="w-10 h-10"
               />
               <span className="text-2xl font-heading font-bold">
-                Tomorrow's Tech
+                Tomorrow&apos;s Tech
               </span>
             </div>
             
             <p className="text-black-300 mb-6 max-w-md leading-relaxed">
-              Building tomorrow's digital solutions today. We specialize in cutting-edge 
-              web development, mobile applications, and digital marketing strategies 
+              Building tomorrow&apos;s technology today. We specialize in cutting-edge
+              web development, mobile applications, and digital marketing strategies
               that drive your business forward.
             </p>
 
@@ -128,7 +128,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-black-300 text-sm">
-            © {currentYear} Tomorrow's Tech. All rights reserved.
+            © {currentYear} Tomorrow&apos;s Tech. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link

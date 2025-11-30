@@ -30,8 +30,8 @@ export default function Hero() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-gray-900 mb-6 leading-tight"
             >
-              Building Tomorrow's{' '}
-              <span className="text-primary-600">Digital Solutions</span>{' '}
+              Building Tomorrow&apos;s{' '}
+              <span className="text-primary-600">Technology</span>{' '}
               Today
             </motion.h1>
 

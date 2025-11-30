@@ -21,8 +21,8 @@ export default function Services() {
             Our <span className="text-primary-600">Services</span>
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            We offer comprehensive digital solutions to help your business thrive 
-            in today's competitive landscape. From concept to deployment, we've got you covered.
+            We offer comprehensive digital solutions to help your business thrive
+            in today&apos;s competitive landscape. From concept to deployment, we&apos;ve got you covered.
           </p>
         </motion.div>
 

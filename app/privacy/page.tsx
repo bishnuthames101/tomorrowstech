@@ -44,7 +44,7 @@ export default function PrivacyPage() {
             {/* Introduction */}
             <div className="card">
               <p className="text-black leading-relaxed">
-                At Tomorrow's Tech, we take your privacy seriously. This Privacy Policy explains how we collect,
+                At Tomorrow&apos;s Tech, we take your privacy seriously. This Privacy Policy explains how we collect,
                 use, disclose, and safeguard your information when you visit our website or use our services.
                 Please read this privacy policy carefully. If you do not agree with the terms of this privacy
                 policy, please do not access the site.
@@ -193,7 +193,7 @@ export default function PrivacyPage() {
 
             {/* Children's Privacy */}
             <div className="card">
-              <h2 className="text-2xl font-bold mb-4">Children's Privacy</h2>
+              <h2 className="text-2xl font-bold mb-4">Children&apos;s Privacy</h2>
               <p className="text-black leading-relaxed">
                 Our services are not intended for individuals under the age of 18. We do not knowingly collect
                 personal information from children. If you believe we have collected information from a child,
@@ -206,7 +206,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold mb-4">Changes to This Privacy Policy</h2>
               <p className="text-black leading-relaxed">
                 We may update this Privacy Policy from time to time. We will notify you of any changes by
-                posting the new Privacy Policy on this page and updating the "Last updated" date. You are
+                posting the new Privacy Policy on this page and updating the &ldquo;Last updated&rdquo; date. You are
                 advised to review this Privacy Policy periodically for any changes.
               </p>
             </div>
@@ -218,9 +218,9 @@ export default function PrivacyPage() {
                 If you have any questions about this Privacy Policy or our privacy practices, please contact us:
               </p>
               <div className="space-y-2 text-black">
-                <p>Email: privacy@tomorrowstech.com</p>
-                <p>Phone: +1 (555) 123-4567</p>
-                <p>Address: 123 Tech Street, Innovation City, TC 12345</p>
+                <p>Email: info@tomorrowstech.com.np</p>
+                <p>Phone: +977 9810323270</p>
+                <p>Address: Balkumari-Kharibot, Lalitpur, Nepal</p>
               </div>
             </div>
           </div>

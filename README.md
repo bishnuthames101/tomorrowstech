@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tomorrow's Tech
 
-## Getting Started
+A modern, responsive web application showcasing digital services including web development, mobile applications, digital marketing, and custom websites.
 
-First, run the development server:
+## 🚀 Features
 
+- **Modern Design**: Built with Next.js 16 and React 19
+- **Responsive UI**: Tailwind CSS v4 for beautiful, mobile-first design
+- **Smooth Animations**: Framer Motion for engaging user interactions
+- **SEO Optimized**: Built-in metadata and SEO best practices
+- **Analytics Ready**: Vercel Analytics integration
+- **Contact Form**: Functional contact form with validation
+- **Portfolio Showcase**: Dynamic portfolio with category filtering
+- **Service Pages**: Dedicated pages for each service offering
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 16.0.5
+- **UI Library**: React 19.2.0
+- **Styling**: Tailwind CSS v4
+- **Animations**: Framer Motion
+- **Forms**: React Hook Form
+- **Icons**: Lucide React
+- **Analytics**: Vercel Analytics
+- **TypeScript**: For type safety
+
+## 📦 Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd tomorrows-tech
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+tomorrows-tech/
+├── app/                      # Next.js app directory
+│   ├── about/               # About page
+│   ├── contact/             # Contact page
+│   ├── portfolio/           # Portfolio page
+│   ├── privacy/             # Privacy policy
+│   ├── services/            # Service pages
+│   ├── terms/               # Terms of service
+│   ├── api/                 # API routes
+│   ├── layout.tsx           # Root layout
+│   └── page.tsx             # Home page
+├── components/              # React components
+│   ├── forms/              # Form components
+│   ├── layout/             # Layout components (Navbar, Footer)
+│   └── sections/           # Page sections
+├── lib/                     # Utility functions and constants
+├── public/                  # Static assets
+│   ├── clients/            # Client logos
+│   ├── portfolio/          # Portfolio images
+│   ├── testimonials/       # Testimonial images
+│   └── favicon/            # Favicon files
+└── types/                   # TypeScript type definitions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Deploy on Vercel
 
-## Deploy on Vercel
+The easiest way to deploy this app is using [Vercel](https://vercel.com):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Import your repository on [Vercel](https://vercel.com/new)
+3. Vercel will automatically detect Next.js and configure the build
+4. Your site will be live in minutes!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Build for Production
+
+```bash
+npm run build
+npm start
+```
+
+## 📝 Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm start` - Start production server
+- `npm run lint` - Run ESLint
+
+## 🎨 Customization
+
+### Update Contact Information
+
+Edit `/lib/constants.ts` to update:
+- Email address
+- Phone number
+- Business address
+- Social media links
+
+### Modify Services
+
+Update the `SERVICES` array in `/lib/constants.ts` to add, remove, or modify services.
+
+### Change Brand Colors
+
+Edit your Tailwind configuration to customize the color scheme.
+
+## 📧 Contact Form
+
+The contact form currently logs submissions to the console. To integrate with an email service:
+
+1. Choose a service (SendGrid, Resend, Nodemailer, etc.)
+2. Add your API key to environment variables
+3. Update `/app/api/contact/route.ts` with your email integration
+
+## 📄 License
+
+All rights reserved - Tomorrow's Tech
+
+## 🤝 Contributing
+
+This is a private project. For inquiries, please contact us through our website.
+
+---
+
+Built with ❤️ by Tomorrow's Tech

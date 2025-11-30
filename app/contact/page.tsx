@@ -4,11 +4,31 @@ import { CONTACT_INFO } from '@/lib/constants';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Tomorrow\'s Tech',
-  description: 'Get in touch with Tomorrow\'s Tech. We\'re here to help you bring your digital projects to life.',
+  title: 'Contact Us - Get a Free Consultation | Tomorrow\'s Tech',
+  description: 'Contact Tomorrow\'s Tech for web development, mobile app development, and digital marketing services. Free consultation available. Quick response within 24 hours. Get your project started today!',
+  keywords: [
+    'contact tomorrow\'s tech',
+    'web development quote',
+    'mobile app consultation',
+    'digital marketing inquiry',
+    'free consultation',
+    'project estimate',
+    'hire developers',
+    'get in touch'
+  ],
   openGraph: {
-    title: 'Contact Us | Tomorrow\'s Tech',
-    description: 'Get in touch with Tomorrow\'s Tech. We\'re here to help you bring your digital projects to life.',
+    title: 'Contact Tomorrow\'s Tech - Free Consultation Available',
+    description: 'Get in touch for web development, mobile apps, and digital marketing. Free consultation. Response within 24 hours.',
+    url: 'https://tomorrowstech.com.np/contact',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Tomorrow\'s Tech - Free Consultation',
+    description: 'Get expert help for your digital projects. Free consultation available.',
+  },
+  alternates: {
+    canonical: 'https://tomorrowstech.com.np/contact',
   },
 };
 
@@ -24,10 +44,10 @@ export default function ContactPage() {
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
             </h1>
             <p className="text-xl text-black leading-relaxed">
-              Have a project in mind? We'd love to hear from you. Get in touch and let's turn your ideas into reality.
+              Have a project in mind? We&apos;d love to hear from you. Get in touch and let&apos;s turn your ideas into reality.
             </p>
           </div>
         </div>
@@ -42,7 +62,7 @@ export default function ContactPage() {
               <div className="card">
                 <h2 className="text-3xl font-bold mb-6">Send us a Message</h2>
                 <p className="text-black mb-8">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </p>
                 <ContactForm />
               </div>

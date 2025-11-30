@@ -20,8 +20,8 @@ export default function Testimonials() {
             What Our <span className="text-primary-600">Clients Say</span>
           </h2>
           <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
-            Don't just take our word for it. Here's what our satisfied clients have to say 
-            about working with Tomorrow's Tech.
+            Don&apos;t just take our word for it. Here&apos;s what our satisfied clients have to say
+            about working with Tomorrow&apos;s Tech.
           </p>
         </motion.div>
 
@@ -56,7 +56,7 @@ export default function Testimonials() {
 
                 {/* Testimonial Text */}
                 <blockquote className="text-black text-center mb-6 leading-relaxed italic">
-                  "{testimonial.content}"
+                  &ldquo;{testimonial.content}&rdquo;
                 </blockquote>
 
                 {/* Author Info */}

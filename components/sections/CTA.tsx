@@ -24,7 +24,7 @@ export default function CTA() {
             </h2>
             
             <p className="text-xl lg:text-2xl text-black-100 mb-12 max-w-3xl mx-auto leading-relaxed">
-              Let's turn your vision into reality. Join hundreds of satisfied clients 
+              Let&apos;s turn your vision into reality. Join hundreds of satisfied clients
               who have revolutionized their business with our cutting-edge digital solutions.
             </p>
           </motion.div>
@@ -71,7 +71,7 @@ export default function CTA() {
                 Quick Response
               </h3>
               <p className="text-black-100 text-sm">
-                Get a response within 24 hours. We're here to help bring your ideas to life.
+                Get a response within 24 hours. We&apos;re here to help bring your ideas to life.
               </p>
             </div>
 

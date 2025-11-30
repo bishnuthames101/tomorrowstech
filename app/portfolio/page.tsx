@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Metadata } from 'next';
 import Link from 'next/link';
 import { ExternalLink, Github, Filter } from 'lucide-react';
 
@@ -121,7 +120,7 @@ export default function PortfolioPage() {
               Our Portfolio
             </h1>
             <p className="text-xl text-black leading-relaxed">
-              Explore our latest projects and see how we've helped businesses transform their digital presence.
+              Explore our latest projects and see how we&apos;ve helped businesses transform their digital presence.
             </p>
           </div>
         </div>
@@ -249,7 +248,7 @@ export default function PortfolioPage() {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-primary-50 mb-8">
-              Let's create something amazing together. Get in touch and let's discuss your vision.
+              Let&apos;s create something amazing together. Get in touch and let&apos;s discuss your vision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary bg-white text-primary-600 hover:bg-gray-100">
