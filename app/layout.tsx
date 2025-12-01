@@ -58,22 +58,40 @@ export const metadata: Metadata = {
     "IT company Nepal",
     "software company Nepal",
     "Tomorrow's Tech",
-    "tech consulting"
+    "tomorrows tech",
+    "tomorrowstech",
+    "tech company Kathmandu",
+    "tech consulting",
+    "Nepal tech company",
+    "Kathmandu software development"
   ],
   authors: [{ name: "Tomorrow's Tech" }],
   creator: "Tomorrow's Tech",
+  metadataBase: new URL("https://tomorrowstech.com.np"),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://tomorrowstech.com.np",
     title: "Tomorrow's Tech - Building Tomorrow's Technology Today",
     description: "We specialize in cutting-edge web development, mobile applications, digital marketing, and custom websites that drive your business forward in the digital age.",
-    siteName: "Tomorrow's Tech - Building Tomorrow's Technology Today",
+    siteName: "Tomorrow's Tech",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tomorrow's Tech - Building Tomorrow's Technology Today",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tomorrow's Tech - Building Tomorrow's Technology Today",
     description: "We specialize in cutting-edge web development, mobile applications, digital marketing, and custom websites that drive your business forward in the digital age.",
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -159,6 +177,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
       <head>
+        {/* Add your Google Search Console verification meta tag here */}
+        {/* <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
