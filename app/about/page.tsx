@@ -145,14 +145,14 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                name: 'Alex Thompson',
+                name: 'Bishnu Sah',
                 role: 'Founder & CEO',
                 icon: '👨‍💼',
                 bio: 'Visionary leader with 10+ years in tech innovation',
               },
-              {
+              /*{
                 name: 'Sarah Martinez',
-                role: 'Lead Designer',
+                role: 'Lead Develop',
                 icon: '🎨',
                 bio: 'Creative genius crafting beautiful user experiences',
               },
@@ -161,7 +161,7 @@ export default function AboutPage() {
                 role: 'Tech Lead',
                 icon: '👨‍💻',
                 bio: 'Full-stack expert building scalable solutions',
-              },
+              },*/
             ].map((member, index) => (
               <div key={index} className="card text-center group hover:border-primary-500/50 transition-all">
                 <div className="text-6xl mb-4">{member.icon}</div>

@@ -9,7 +9,7 @@ export default function CTA() {
     <section className="section-padding bg-primary-600 relative overflow-hidden">
       <div className="container-custom relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mt-20 bg-[#90D5FF] rounded-2xl p-8 lg:p-12 shadow-2xl">
+          <div className="mt-20 bg-blue rounded-2xl p-8 lg:p-12 shadow-2xl">
           {/* Main CTA Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
