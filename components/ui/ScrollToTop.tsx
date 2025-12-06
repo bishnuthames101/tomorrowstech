@@ -35,10 +35,21 @@ export default function ScrollToTop() {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 p-3 bg-primary-600 hover:bg-primary-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2"
+          className="fixed bottom-8 right-8 z-50 p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-blue-300"
+          style={{
+            backgroundColor: '#1890ff',
+            color: 'white',
+            border: '2px solid #096dd9',
+          }}
           aria-label="Scroll to top"
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = '#096dd9';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = '#1890ff';
+          }}
         >
-          <ArrowUp className="w-6 h-6" />
+          <ArrowUp className="w-6 h-6" strokeWidth={2.5} />
         </button>
       )}
     </>
