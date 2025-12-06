@@ -23,6 +23,7 @@ const config: Config = {
           300: '#0f3460',
           600: '#1e293b',
           800: '#0f172a',
+          900: '#0a0f1e',
         },
         accent: '#00d4ff',
       },

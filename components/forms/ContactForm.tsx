@@ -71,9 +71,9 @@ export default function ContactForm() {
               message: 'Name must be at least 2 characters',
             },
           })}
-          className={`w-full px-4 py-3 bg-dark-800 border ${
-            errors.name ? 'border-red-500' : 'border-dark-600'
-          } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-white placeholder-gray-500`}
+          className={`w-full px-4 py-3 bg-primary-900/30 border ${
+            errors.name ? 'border-red-500' : 'border-primary-500/30'
+          } rounded-lg focus:outline-none focus:border-primary-400 focus:bg-primary-900/40 transition-colors text-gray-900 placeholder-gray-500`}
           placeholder="Your Name"
         />
         {errors.name && (
@@ -96,9 +96,9 @@ export default function ContactForm() {
               message: 'Invalid email address',
             },
           })}
-          className={`w-full px-4 py-3 bg-dark-800 border ${
-            errors.email ? 'border-red-500' : 'border-dark-600'
-          } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-white placeholder-gray-500`}
+          className={`w-full px-4 py-3 bg-primary-900/30 border ${
+            errors.email ? 'border-red-500' : 'border-primary-500/30'
+          } rounded-lg focus:outline-none focus:border-primary-400 focus:bg-primary-900/40 transition-colors text-gray-900 placeholder-gray-500`}
           placeholder="yourname@gmail.com"
         />
         {errors.email && (
@@ -121,9 +121,9 @@ export default function ContactForm() {
               message: 'Invalid phone number',
             },
           })}
-          className={`w-full px-4 py-3 bg-dark-800 border ${
-            errors.phone ? 'border-red-500' : 'border-dark-600'
-          } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-white placeholder-gray-500`}
+          className={`w-full px-4 py-3 bg-primary-900/30 border ${
+            errors.phone ? 'border-red-500' : 'border-primary-500/30'
+          } rounded-lg focus:outline-none focus:border-primary-400 focus:bg-primary-900/40 transition-colors text-gray-900 placeholder-gray-500`}
           placeholder="+977 9800000000"
         />
         {errors.phone && (
@@ -141,9 +141,9 @@ export default function ContactForm() {
           {...register('serviceInterest', {
             required: 'Please select a service',
           })}
-          className={`w-full px-4 py-3 bg-dark-800 border ${
-            errors.serviceInterest ? 'border-red-500' : 'border-dark-600'
-          } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-white`}
+          className={`w-full px-4 py-3 bg-primary-900/30 border ${
+            errors.serviceInterest ? 'border-red-500' : 'border-primary-500/30'
+          } rounded-lg focus:outline-none focus:border-primary-400 focus:bg-primary-900/40 transition-colors text-gray-900`}
         >
           <option value="">Select a service...</option>
           {SERVICES.map((service) => (
@@ -173,9 +173,9 @@ export default function ContactForm() {
               message: 'Message must be at least 10 characters',
             },
           })}
-          className={`w-full px-4 py-3 bg-dark-800 border ${
-            errors.message ? 'border-red-500' : 'border-dark-600'
-          } rounded-lg focus:outline-none focus:border-primary-500 transition-colors text-white placeholder-gray-500 resize-none`}
+          className={`w-full px-4 py-3 bg-primary-900/30 border ${
+            errors.message ? 'border-red-500' : 'border-primary-500/30'
+          } rounded-lg focus:outline-none focus:border-primary-400 focus:bg-primary-900/40 transition-colors text-gray-900 placeholder-gray-500 resize-none`}
           placeholder="Tell us about your project..."
         />
         {errors.message && (
