@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ContactForm } from '@/types';
+import { supabase } from '@/lib/supabase';
 
 export async function POST(request: NextRequest) {
   try {
@@ -24,64 +25,54 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Log the form submission (in production, you'd send this to your email service)
-    console.log('📧 New Contact Form Submission:');
+    // Get client IP and user agent for tracking
+    const ipAddress = request.headers.get('x-forwarded-for') ||
+                      request.headers.get('x-real-ip') ||
+                      'unknown';
+    const userAgent = request.headers.get('user-agent') || 'unknown';
+
+    // Save to Supabase database
+    const { data, error: dbError } = await supabase
+      .from('contact_submissions')
+      .insert([
+        {
+          name,
+          email,
+          phone,
+          service_interest: serviceInterest,
+          message,
+          ip_address: ipAddress,
+          user_agent: userAgent,
+        },
+      ])
+      .select();
+
+    if (dbError) {
+      console.error('Database error:', dbError);
+      throw new Error('Failed to save contact submission');
+    }
+
+    // Log the form submission for debugging
+    console.log('📧 New Contact Form Submission saved to database:');
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
+    console.log(`ID: ${data?.[0]?.id}`);
     console.log(`Name: ${name}`);
     console.log(`Email: ${email}`);
     console.log(`Phone: ${phone}`);
     console.log(`Service Interest: ${serviceInterest}`);
-    console.log(`Message: ${message}`);
     console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
-    // TODO: In production, integrate with email service
+    // TODO: Optional - Send email notifications
     // Examples:
     // - SendGrid: await sendEmail(body)
     // - Resend: await resend.emails.send(...)
     // - Nodemailer: await transporter.sendMail(...)
-    // - Mailgun: await mailgun.messages.create(...)
-
-    // For now, we'll simulate success
-    // In a real application, you would:
-    // 1. Send an email to your business email
-    // 2. Send a confirmation email to the customer
-    // 3. Store the submission in a database
-    // 4. Trigger notifications (Slack, Discord, etc.)
-
-    // Example SendGrid implementation (commented out):
-    /*
-    const sgMail = require('@sendgrid/mail');
-    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-
-    await sgMail.send({
-      to: 'hello@tomorrowstech.com',
-      from: 'noreply@tomorrowstech.com',
-      subject: `New Contact Form: ${serviceInterest}`,
-      text: `
-        Name: ${name}
-        Email: ${email}
-        Phone: ${phone}
-        Service: ${serviceInterest}
-
-        Message:
-        ${message}
-      `,
-      html: `
-        <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Service Interest:</strong> ${serviceInterest}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
-    });
-    */
 
     return NextResponse.json(
       {
         success: true,
         message: 'Your message has been sent successfully!',
+        submissionId: data?.[0]?.id,
       },
       { status: 200 }
     );
