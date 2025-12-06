@@ -142,7 +142,7 @@ export default function AboutPage() {
             Our Team
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid md:grid-cols-1 gap-8 mb-12">
             {[
               {
                 name: 'Bishnu Sah',
