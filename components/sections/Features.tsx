@@ -21,8 +21,8 @@ const features = [
   },
   {
     icon: Award,
-    title: 'Award-Winning Quality',
-    description: 'Recognized for excellence in web development and digital solutions. Quality is at the heart of everything we create.'
+    title: 'Quality First',
+    description: 'We hold ourselves to the highest standards in web development and digital solutions. Quality is at the heart of everything we create.'
   },
   {
     icon: Headphones,
@@ -91,33 +91,6 @@ export default function Features() {
           })}
         </div>
 
-        {/* Bottom Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-20 bg-primary-600 rounded-2xl py-16 px-8 lg:py-20 lg:px-12 shadow-2xl"
-        >
-          <div className="grid md:grid-cols-4 gap-8 text-center text-black">
-            <div>
-              <div className="text-4xl lg:text-5xl font-heading font-bold mb-2">5+</div>
-              <div className="text-primary-100">Years Experience</div>
-            </div>
-            <div>
-              <div className="text-4xl lg:text-5xl font-heading font-bold mb-2">50+</div>
-              <div className="text-primary-100">Projects Delivered</div>
-            </div>
-            <div>
-              <div className="text-4xl lg:text-5xl font-heading font-bold mb-2">30+</div>
-              <div className="text-primary-100">Happy Clients</div>
-            </div>
-            <div>
-              <div className="text-4xl lg:text-5xl font-heading font-bold mb-2">24/7</div>
-              <div className="text-primary-100">Support Available</div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

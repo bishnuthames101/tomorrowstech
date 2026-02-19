@@ -69,26 +69,6 @@ export default function Hero() {
               </Link>
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.8 }}
-              className="mt-12 grid grid-cols-3 gap-8 text-center lg:text-left"
-            >
-              <div>
-                <div className="text-3xl font-heading font-bold text-primary-600">50+</div>
-                <div className="text-black">Projects Completed</div>
-              </div>
-              <div>
-                <div className="text-3xl font-heading font-bold text-primary-600">100%</div>
-                <div className="text-black">Client Satisfaction</div>
-              </div>
-              <div>
-                <div className="text-3xl font-heading font-bold text-primary-600">24/7</div>
-                <div className="text-black">Support Available</div>
-              </div>
-            </motion.div>
           </motion.div>
 
           {/* Right Column - Logo/Visual */}

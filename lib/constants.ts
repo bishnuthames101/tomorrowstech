@@ -1,4 +1,4 @@
-import { Service, NavItem, Testimonial } from '@/types';
+import { Service, NavItem } from '@/types';
 
 export const COMPANY_NAME = "Tomorrow's Tech";
 export const COMPANY_TAGLINE = "Building Tomorrow's Technology Today";
@@ -75,35 +75,6 @@ export const NAV_ITEMS: NavItem[] = [
   { name: 'Contact', href: '/contact' }
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: '1',
-    name: 'Sarah Johnson',
-    position: 'CEO',
-    company: 'TechStart Inc.',
-    rating: 5,
-    content: "Tomorrow's Tech delivered an exceptional web application that exceeded our expectations. Their attention to detail and technical expertise is outstanding.",
-    avatar: '/testimonials/sarah.svg'
-  },
-  {
-    id: '2',
-    name: 'Michael Chen',
-    position: 'Marketing Director',
-    company: 'Global Solutions',
-    rating: 5,
-    content: 'The digital marketing strategy implemented by Tomorrow\'s Tech increased our online visibility by 300%. Highly recommend their services.',
-    avatar: '/testimonials/michael.svg'
-  },
-  {
-    id: '3',
-    name: 'Emily Rodriguez',
-    position: 'Founder',
-    company: 'Creative Studio',
-    rating: 5,
-    content: 'Professional, reliable, and innovative. Tomorrow\'s Tech created a stunning website that perfectly represents our brand.',
-    avatar: '/testimonials/emily.svg'
-  }
-];
 
 export const FEATURES = [
   {
