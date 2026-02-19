@@ -17,7 +17,7 @@ export default function PortfolioPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
               Our Portfolio
             </h1>
-            <p className="text-xl text-black leading-relaxed">
+            <p className="text-xl text-gray-300 leading-relaxed">
               We&apos;re just getting started — exciting projects are on the way.
             </p>
           </div>

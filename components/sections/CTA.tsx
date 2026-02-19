@@ -20,10 +20,10 @@ export default function CTA() {
           
             <h2 className="text-4xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
               Ready to Transform Your
-              <span className="block text-white-200">Digital Presence?</span>
+              <span className="block text-white/90">Digital Presence?</span>
             </h2>
             
-            <p className="text-xl lg:text-2xl text-black-100 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-white/80 mb-12 max-w-3xl mx-auto leading-relaxed">
               Let&apos;s turn your vision into reality. Join hundreds of satisfied clients
               who have revolutionized their business with our cutting-edge digital solutions.
             </p>
@@ -70,7 +70,7 @@ export default function CTA() {
               <h3 className="text-lg font-heading font-semibold text-white mb-2">
                 Quick Response
               </h3>
-              <p className="text-black-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Get a response within 24 hours. We&apos;re here to help bring your ideas to life.
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function CTA() {
               <h3 className="text-lg font-heading font-semibold text-white mb-2">
                 Free Consultation
               </h3>
-              <p className="text-black-100 text-sm">
+              <p className="text-white/80 text-sm">
                 No obligation consultation to discuss your project needs and goals.
               </p>
             </div>
@@ -96,7 +96,7 @@ export default function CTA() {
               <h3 className="text-lg font-heading font-semibold text-white mb-2">
                 Custom Solutions
               </h3>
-              <p className="text-black-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Tailored digital solutions designed specifically for your business needs.
               </p>
             </div>
@@ -110,7 +110,7 @@ export default function CTA() {
             viewport={{ once: true }}
             className="mt-16 text-center"
           >
-            <p className="text-black-100">
+            <p className="text-white/80">
               Join the digital revolution today • No hidden fees • 100% satisfaction guarantee
             </p>
           </motion.div>

@@ -71,7 +71,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
               {service.title}
             </h1>
-            <p className="text-xl text-black leading-relaxed">
+            <p className="text-xl text-gray-300 leading-relaxed">
               {service.description}
             </p>
           </div>
@@ -82,7 +82,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
               What We Offer
             </h2>
 
@@ -116,7 +116,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <section className="section-padding bg-dark-800/50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
               Our Process
             </h2>
 
@@ -131,8 +131,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
                   <div className="text-5xl font-bold text-primary-500/20 mb-4">
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-black text-sm">{item.desc}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+                  <p className="text-gray-300 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -144,7 +144,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
               Technologies We Use
             </h2>
 

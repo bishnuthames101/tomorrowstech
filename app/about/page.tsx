@@ -47,7 +47,7 @@ export default function AboutPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
               Building Tomorrow&apos;s Technology Today
             </h1>
-            <p className="text-xl text-black leading-relaxed mb-8">
+            <p className="text-xl text-gray-300 leading-relaxed mb-8">
               We&apos;re a passionate team of developers, designers, and digital strategists dedicated to transforming ideas into exceptional digital experiences.
             </p>
           </div>
@@ -58,8 +58,8 @@ export default function AboutPage() {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Our Story</h2>
-            <div className="space-y-6 text-black leading-relaxed">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">Our Story</h2>
+            <div className="space-y-6 text-gray-300 leading-relaxed">
               <p className="text-lg">
                 Tomorrow&apos;s Tech Pvt. Ltd. was founded with a clear vision: to make high-quality digital solutions accessible to businesses of all sizes. Based in Lalitpur, Nepal, we are at the beginning of an exciting journey.
               </p>
@@ -117,7 +117,7 @@ export default function AboutPage() {
       {/* What Sets Us Apart */}
       <section className="section-padding">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
             What Sets Us Apart
           </h2>
 
@@ -139,7 +139,7 @@ export default function AboutPage() {
       {/* Team Section */}
       <section className="section-padding bg-dark-800/50">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
             Meet the Founder
           </h2>
 

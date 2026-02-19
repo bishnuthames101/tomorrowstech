@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-dark-200 text-black-300">
+    <footer className="bg-dark-200 text-gray-400">
       <div className="container-custom section-padding">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Company Info */}
@@ -25,7 +25,7 @@ export default function Footer() {
               </span>
             </div>
             
-            <p className="text-black-300 mb-6 max-w-md leading-relaxed">
+            <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
               Building tomorrow&apos;s technology today. We specialize in cutting-edge
               web development, mobile applications, and digital marketing strategies
               that drive your business forward.
@@ -35,13 +35,13 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-xl font-heading font-semibold mb-6">Services</h3>
+            <h3 className="text-xl font-heading font-semibold mb-6 text-white">Services</h3>
             <ul className="space-y-3">
               {SERVICES.map((service) => (
                 <li key={service.id}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="text-black-300 hover:text-primary-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                   >
                     {service.title}
                   </Link>
@@ -52,13 +52,13 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-xl font-heading font-semibold mb-6">Contact</h3>
+            <h3 className="text-xl font-heading font-semibold mb-6 text-white">Contact</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
                 <a
                   href={`mailto:${CONTACT_INFO.email}`}
-                  className="text-black-300 hover:text-primary-400 transition-colors duration-200"
+                  className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                 >
                   {CONTACT_INFO.email}
                 </a>
@@ -67,20 +67,20 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
                 <a
                   href={`tel:${CONTACT_INFO.phone}`}
-                  className="text-black-300 hover:text-primary-400 transition-colors duration-200"
+                  className="text-gray-400 hover:text-primary-400 transition-colors duration-200"
                 >
                   {CONTACT_INFO.phone}
                 </a>
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
-                <span className="text-black-300">
+                <span className="text-gray-400">
                   {CONTACT_INFO.address}
                 </span>
               </li>
               <li className="flex items-start space-x-3">
                 <Clock className="w-5 h-5 text-primary-400 mt-0.5 flex-shrink-0" />
-                <div className="text-black-300">
+                <div className="text-gray-400">
                   <div>Mon-Fri: {CONTACT_INFO.hours.weekdays}</div>
                   <div>Sat: {CONTACT_INFO.hours.saturday}</div>
                   <div>Sun: {CONTACT_INFO.hours.sunday}</div>
@@ -92,19 +92,19 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-black-300 text-sm">
+          <p className="text-gray-400 text-sm">
             © {currentYear} Tomorrow&apos;s Tech. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link
               href="/privacy"
-              className="text-black-300 hover:text-primary-400 text-sm transition-colors duration-200"
+              className="text-gray-400 hover:text-primary-400 text-sm transition-colors duration-200"
             >
               Privacy Policy
             </Link>
             <Link
               href="/terms"
-              className="text-black-300 hover:text-primary-400 text-sm transition-colors duration-200"
+              className="text-gray-400 hover:text-primary-400 text-sm transition-colors duration-200"
             >
               Terms of Service
             </Link>

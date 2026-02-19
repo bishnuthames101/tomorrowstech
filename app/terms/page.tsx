@@ -30,7 +30,7 @@ export default function TermsPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text text-transparent">
               Terms of Service
             </h1>
-            <p className="text-xl text-black">
+            <p className="text-xl text-gray-300">
               Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </p>
           </div>

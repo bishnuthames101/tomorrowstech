@@ -30,7 +30,7 @@ export default function PrivacyPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
               Privacy Policy
             </h1>
-            <p className="text-xl text-black">
+            <p className="text-xl text-gray-300">
               Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
               <div className="card space-y-4">
                 <div>
                   <h3 className="text-xl font-semibold mb-3 text-primary-400">Personal Information</h3>
-                  <p className="text-black-300 leading-relaxed mb-3">
+                  <p className="text-gray-600 leading-relaxed mb-3">
                     We may collect personal information that you voluntarily provide to us when you:
                   </p>
                   <ul className="list-disc list-inside space-y-2 text-black ml-4">
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
                     <li>Subscribe to our newsletter</li>
                     <li>Engage with our services</li>
                   </ul>
-                  <p className="text-black-300 leading-relaxed mt-3">
+                  <p className="text-gray-600 leading-relaxed mt-3">
                     This information may include your name, email address, phone number, company name,
                     and any other information you choose to provide.
                   </p>
@@ -94,10 +94,10 @@ export default function PrivacyPage() {
                 <h2 className="text-3xl font-bold">How We Use Your Information</h2>
               </div>
               <div className="card">
-                <p className="text-black-300 leading-relaxed mb-4">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   We use the information we collect in the following ways:
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-black-300 ml-4">
+                <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                   <li>To respond to your inquiries and provide customer support</li>
                   <li>To send you marketing and promotional communications (with your consent)</li>
                   <li>To improve our website and services</li>
@@ -131,16 +131,16 @@ export default function PrivacyPage() {
                 <h2 className="text-3xl font-bold">Sharing Your Information</h2>
               </div>
               <div className="card">
-                <p className="text-black-300 leading-relaxed mb-4">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   We may share your information in the following situations:
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-black-300 ml-4">
+                <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                   <li>With service providers who assist us in operating our website and conducting our business</li>
                   <li>To comply with legal obligations or respond to lawful requests</li>
                   <li>To protect our rights, privacy, safety, or property</li>
                   <li>In connection with a business transfer, merger, or acquisition</li>
                 </ul>
-                <p className="text-black-300 leading-relaxed mt-4">
+                <p className="text-gray-600 leading-relaxed mt-4">
                   We do not sell or rent your personal information to third parties for marketing purposes.
                 </p>
               </div>
@@ -153,10 +153,10 @@ export default function PrivacyPage() {
                 <h2 className="text-3xl font-bold">Your Rights</h2>
               </div>
               <div className="card">
-                <p className="text-black-300 leading-relaxed mb-4">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   Depending on your location, you may have certain rights regarding your personal information:
                 </p>
-                <ul className="list-disc list-inside space-y-2 text-black-300 ml-4">
+                <ul className="list-disc list-inside space-y-2 text-gray-600 ml-4">
                   <li>The right to access your personal information</li>
                   <li>The right to correct inaccurate or incomplete information</li>
                   <li>The right to request deletion of your information</li>
@@ -164,7 +164,7 @@ export default function PrivacyPage() {
                   <li>The right to withdraw consent at any time</li>
                   <li>The right to data portability</li>
                 </ul>
-                <p className="text-black-300 leading-relaxed mt-4">
+                <p className="text-gray-600 leading-relaxed mt-4">
                   To exercise these rights, please contact us using the information provided below.
                 </p>
               </div>

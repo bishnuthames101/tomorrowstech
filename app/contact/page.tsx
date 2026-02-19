@@ -43,7 +43,7 @@ export default function ContactPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
               Get In Touch
             </h1>
-            <p className="text-xl text-black leading-relaxed">
+            <p className="text-xl text-gray-300 leading-relaxed">
               Have a project in mind? Reach out directly and let&apos;s turn your ideas into reality.
             </p>
           </div>
