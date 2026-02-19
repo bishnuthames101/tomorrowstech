@@ -31,19 +31,18 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-dark-900">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-dark-800 via-dark-900 to-dark-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-blue-50 relative overflow-hidden">
         <div className="absolute top-20 right-20 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
 
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
-              Get In Touch
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+              Get In <span className="text-primary-600">Touch</span>
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               Have a project in mind? Reach out directly and let&apos;s turn your ideas into reality.
             </p>
           </div>
@@ -59,15 +58,15 @@ export default function ContactPage() {
             <div className="card group hover:border-primary-500/50 transition-all">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary-500/10 flex items-center justify-center group-hover:bg-primary-500/20 transition-colors">
-                    <Mail className="w-6 h-6 text-primary-400" />
+                  <div className="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors">
+                    <Mail className="w-6 h-6 text-primary-600" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Email Us</h3>
+                  <h3 className="font-semibold mb-2 text-gray-900">Email Us</h3>
                   <a
                     href={`mailto:${CONTACT_INFO.email}`}
-                    className="text-black hover:text-primary-400 transition-colors text-lg"
+                    className="text-gray-700 hover:text-primary-600 transition-colors text-lg"
                   >
                     {CONTACT_INFO.email}
                   </a>
@@ -79,15 +78,15 @@ export default function ContactPage() {
             <div className="card group hover:border-primary-500/50 transition-all">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-accent-500/10 flex items-center justify-center group-hover:bg-accent-500/20 transition-colors">
-                    <Phone className="w-6 h-6 text-accent-400" />
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+                    <Phone className="w-6 h-6 text-primary-600" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Call Us</h3>
+                  <h3 className="font-semibold mb-2 text-gray-900">Call Us</h3>
                   <a
                     href={`tel:${CONTACT_INFO.phone.replace(/\s/g, '')}`}
-                    className="text-black hover:text-accent-400 transition-colors text-lg"
+                    className="text-gray-700 hover:text-primary-600 transition-colors text-lg"
                   >
                     {CONTACT_INFO.phone}
                   </a>
@@ -99,13 +98,13 @@ export default function ContactPage() {
             <div className="card group hover:border-primary-500/50 transition-all">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-primary-500/10 flex items-center justify-center group-hover:bg-primary-500/20 transition-colors">
-                    <MapPin className="w-6 h-6 text-primary-400" />
+                  <div className="w-12 h-12 rounded-full bg-primary-50 flex items-center justify-center group-hover:bg-primary-100 transition-colors">
+                    <MapPin className="w-6 h-6 text-primary-600" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Our Location</h3>
-                  <p className="text-black text-lg">
+                  <h3 className="font-semibold mb-2 text-gray-900">Our Location</h3>
+                  <p className="text-gray-700 text-lg">
                     {CONTACT_INFO.address}
                   </p>
                 </div>
@@ -116,13 +115,13 @@ export default function ContactPage() {
             <div className="card group hover:border-primary-500/50 transition-all">
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-12 h-12 rounded-full bg-accent-500/10 flex items-center justify-center group-hover:bg-accent-500/20 transition-colors">
-                    <Clock className="w-6 h-6 text-accent-400" />
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+                    <Clock className="w-6 h-6 text-primary-600" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-2">Business Hours</h3>
-                  <div className="space-y-1 text-black">
+                  <h3 className="font-semibold mb-2 text-gray-900">Business Hours</h3>
+                  <div className="space-y-1 text-gray-700">
                     <p>Mon – Fri: {CONTACT_INFO.hours.weekdays}</p>
                     <p>Saturday: {CONTACT_INFO.hours.saturday}</p>
                     <p>Sunday: {CONTACT_INFO.hours.sunday}</p>

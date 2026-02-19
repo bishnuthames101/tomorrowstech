@@ -45,12 +45,12 @@ export default async function ServicePage({ params }: ServicePageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-dark-900">
+    <main className="min-h-screen bg-white">
       {/* Back Navigation */}
       <div className="container-custom py-8">
         <Link
           href="/#services"
-          className="inline-flex items-center gap-2 text-primary-400 hover:text-primary-300 transition-colors"
+          className="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 transition-colors"
         >
           <ArrowLeft className="w-4 h-4" />
           Back to Services
@@ -58,20 +58,19 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </div>
 
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-dark-800 via-dark-900 to-dark-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-blue-50 relative overflow-hidden">
         <div className="absolute top-20 right-20 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="text-7xl mb-6 animate-float">
+            <div className="text-7xl mb-6">
               {service.icon}
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
               {service.title}
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               {service.description}
             </p>
           </div>
@@ -82,7 +81,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
               What We Offer
             </h2>
 
@@ -99,8 +98,8 @@ export default async function ServicePage({ params }: ServicePageProps) {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-1">{feature}</h3>
-                      <p className="text-black text-sm">
+                      <h3 className="text-lg font-semibold mb-1 text-gray-900">{feature}</h3>
+                      <p className="text-gray-600 text-sm">
                         Professional {feature.toLowerCase()} services tailored to your needs
                       </p>
                     </div>
@@ -113,10 +112,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
       </section>
 
       {/* Process Section */}
-      <section className="section-padding bg-dark-800/50">
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
               Our Process
             </h2>
 
@@ -128,11 +127,11 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 { step: '04', title: 'Launch', desc: 'Deploy and provide ongoing support' },
               ].map((item, index) => (
                 <div key={index} className="text-center">
-                  <div className="text-5xl font-bold text-primary-500/20 mb-4">
+                  <div className="text-5xl font-bold text-primary-200 mb-4">
                     {item.step}
                   </div>
-                  <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
-                  <p className="text-gray-300 text-sm">{item.desc}</p>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -144,7 +143,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
       <section className="section-padding">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-gray-900">
               Technologies We Use
             </h2>
 
@@ -153,10 +152,10 @@ export default async function ServicePage({ params }: ServicePageProps) {
                 {getTechnologies(service.slug).map((tech, index) => (
                   <div
                     key={index}
-                    className="flex flex-col items-center gap-3 p-4 rounded-lg hover:bg-dark-700 transition-colors"
+                    className="flex flex-col items-center gap-3 p-4 rounded-lg hover:bg-gray-50 transition-colors"
                   >
                     <div className="text-4xl">{tech.icon}</div>
-                    <span className="text-sm font-medium text-black">{tech.name}</span>
+                    <span className="text-sm font-medium text-gray-700">{tech.name}</span>
                   </div>
                 ))}
               </div>
@@ -170,7 +169,7 @@ export default async function ServicePage({ params }: ServicePageProps) {
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Ready to Get Started?
             </h2>
             <p className="text-xl text-primary-50 mb-8">

@@ -5,19 +5,18 @@ import { ArrowRight } from 'lucide-react';
 
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-dark-900">
+    <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-dark-800 via-dark-900 to-dark-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5" />
+      <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-blue-50 relative overflow-hidden">
         <div className="absolute top-20 right-20 w-96 h-96 bg-primary-500/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-20 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-100/50 rounded-full blur-3xl" />
 
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text ">
-              Our Portfolio
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+              Our <span className="text-primary-600">Portfolio</span>
             </h1>
-            <p className="text-xl text-gray-300 leading-relaxed">
+            <p className="text-xl text-gray-600 leading-relaxed">
               We&apos;re just getting started — exciting projects are on the way.
             </p>
           </div>
@@ -30,8 +29,8 @@ export default function PortfolioPage() {
           <div className="max-w-2xl mx-auto text-center">
             <div className="card">
               <div className="text-6xl mb-6">🚀</div>
-              <h2 className="text-3xl font-bold mb-4">Projects Coming Soon</h2>
-              <p className="text-black mb-6 leading-relaxed">
+              <h2 className="text-3xl font-bold mb-4 text-gray-900">Projects Coming Soon</h2>
+              <p className="text-gray-600 mb-6 leading-relaxed">
                 We are actively working on new and exciting projects. Our portfolio will be updated as we complete them. In the meantime, feel free to reach out and discuss your project with us.
               </p>
               <Link
@@ -47,14 +46,13 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-accent-700 relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+      <section className="section-padding bg-gradient-to-br from-primary-600 via-primary-700 to-blue-700 relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Ready to Be Our First Featured Client?
             </h2>
-            <p className="text-xl text-primary-50 mb-8">
+            <p className="text-xl text-primary-100 mb-8">
               Let&apos;s build something great together. Get in touch and let&apos;s discuss your vision.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

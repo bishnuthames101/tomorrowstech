@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-dark-900">
+    <main className="min-h-screen bg-white">
       {/* Back Navigation */}
       <div className="container-custom py-8">
         <Link
@@ -22,7 +22,7 @@ export default function TermsPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="section-padding bg-gradient-to-br from-dark-800 via-dark-900 to-dark-800 relative overflow-hidden">
+      <section className="section-padding bg-gradient-to-br from-blue-50 via-white to-blue-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5" />
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -30,7 +30,7 @@ export default function TermsPage() {
             <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary-400 via-accent-400 to-primary-400 bg-clip-text text-transparent">
               Terms of Service
             </h1>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-gray-600">
               Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
             </p>
           </div>
